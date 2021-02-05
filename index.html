@@ -1,0 +1,68 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Build a Survey Form</title>
+</head>
+<body>
+    <h1 id="title">A survey about surveys</h1>
+    <p id="description">How do you really feel about survey's?</p>
+    <form id="survey-form">
+        <div class="name-input">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required />
+        </div>
+        <div class="email-input">
+            <label for="email" id="email-label">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required />
+        </div>
+        <div class="number-input">
+            <label for="number" id="number-label">Number</label>
+            <input type="number" name="number" id="number" placeholder="Enter a number" min="0" max="150" />
+        </div>
+        <div class="dropdown">
+            <label for="dropdown" id="dropdown-label">Favorite Teenage Mutant Ninja Turtle</label>
+            <select name="dropdown" id="dropdown">
+                <option value="leonardo">Leonardo</option>
+                <option value="raphael">Raphael</option>
+                <option value="donatello">Donatello</option>
+                <option value="michelangelo">Michelangelo</option>
+            </select>
+        </div>
+        <div class="radio">
+            <label for="sex">Sex</label>
+            <input type="radio" name="sex" id="male" value="male" />
+            <label for="male">Male</label>
+            <input type="radio" name="sex" id="female" value="female" />
+            <label for="female">Female</label>
+        </div>
+        <div class="checkbox">
+            <label for="checkbox-food">Check all toppings that belong on pizza:</labezl>
+            <input type="checkbox" name="topping1" id="pineapple" value="pineapple">
+            <label for="pineapple">Pineapple</label>
+            <input type="checkbox" name="topping2" id="pepperoni" value="pepperoni">
+            <label for="pepperoni">Pepperoni</label>
+            <input type="checkbox" name="topping3" id="dumplings" value="dumplings">
+            <label for="dumplings">Dumplings</label>
+        </div>
+        <div class="extra-comments">
+            <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Write any additional comments here."></textarea>
+        </div>
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</body>
+</html>
